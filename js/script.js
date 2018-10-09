@@ -65,9 +65,10 @@ console.groupEnd();
 		якщо це дійсно так. */
 
 function findArguments(a){
-	console.log(a);
 	if (a === undefined) {
 		console.log('Аргументів не задано');
+	} else {
+		console.log(a);
 	}
 }	
 
