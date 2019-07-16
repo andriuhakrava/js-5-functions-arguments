@@ -25,28 +25,20 @@ function dayOfWeek(num) {
 	switch(num) {
 		case 1:
 			return 'Monday';
-			break;
 		case 2:
 			return 'Tuesday';
-			break;
 		case 3:
 			return 'Wednesday';
-			break;
 		case 4:
 			return 'Thursday';
-			break;
 		case 5:
 			return 'Friday';
-			break;
 		case 6:
 			return 'Saturday';
-			break;
 		case 7:
 			return 'Sunday';
-			break;
 		default:
 			return 'Please enter valid value!';
-			break;
 	}
 }
 
@@ -93,12 +85,11 @@ console.log(`Квадрат переданого числа: ${result}`);
 let header = document.querySelector('h1');
 
 function passValue(textValue, header){
-	header.innerText = textValue;
-	if (header === undefined) {
+	if (!header) {
 		return false;
-	} else {
-		return true;
 	}
+	header.innerText = textValue;
+	return true;
 }
 
 passValue('Cuba Libre', header);
@@ -119,4 +110,3 @@ function formulaCalc(a, b, c, d, e){
 
 let resultFormula = formulaCalc(1, 2, 3, 4, 5);
 console.log(resultFormula);
-
